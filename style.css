@@ -1,0 +1,35 @@
+body{
+    background-color: black; /*Colour by Name*/
+}
+h1{
+    color: rgb(59, 138, 184); /*Colour by RGB value*/
+    font-family: 'Raleway', 'Courier New', Courier, monospace; /*Raleway exported from fonts.google.com through the link in the HTML head tag*/
+    font-size: 30px;
+}
+/* Colouring the whole group at once*/
+p{
+    color: #eb0000; /*Colour by Hexadecimal Value*/
+    font-family: 'Roboto', 'Lucida Sans', sans-serif; /*Roboto exported from fonts.google.com through the link in the HTML head tag*/
+    font-size: 25px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Colouring with ID */
+#p1{
+    color: orangered;
+}
+#p2{
+    color: white;
+}
+#p3{
+    color: green;
+}
+
+/* Colouring with class (defined as odd-even in html file) */
+.odd{
+    color: hsl(231, 86%, 67%); /*Colour by HSL value*/
+}
+.even{
+    color: white;
+}

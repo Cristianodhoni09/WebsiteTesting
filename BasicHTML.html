@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lyrics Of a Song</title>
+    </head>
+    <body>
+        <header>
+            <h2>Welcome to my Website!</h2>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">Help</a>
+            <hr>
+        </header>
+
+        <main>
+            <h1>Jana Gana Mana</h1>
+            <h4>-By Rabindra Nath Tagore</h4>
+
+            <!--
+                href -> Adds link
+                title -> To show message when cursor points there
+                target -> Either to open link in same tab or different
+            -->
+            <a href="https://youtu.be/r3TtgYuaVFk?si=U_PE_J4MQ4o6GsjU"
+            title="Goes to Youtube"
+            target="_blank">
+                ▶Video 
+            </a>
+
+            <br>
+            <br>
+
+            <!--
+                src -> To add image path
+                alt -> To show message instead if the image does not loads.
+                    For example when we write .jpg but img type is .png
+            -->
+            <!-- <a href="https://youtu.be/r3TtgYuaVFk?si=U_PE_J4MQ4o6GsjU"
+            title="Click here to watch video"
+            target="_blank"> -->
+
+                <img src="Images/indianFlag.png"
+                    height="50" width="90"
+                    alt="This is indian Flag">
+            <!-- </a> -->
+
+            <br>
+
+            <p>Audio of Jana Gana Mana</p>
+            <!--
+                src -> To add audio path
+                controls -> without this audio will not be visible
+                Various other attributes like autoplay, muted, loop etc
+            -Explore: what does "type" do in src?
+            -->
+            <!-- <audio controls autoplay muted loop>
+                <source src="Audio/JanaGanaManaVoice.mp3">
+            </audio> -->
+
+            <p>Jana Gana Mana(Instrumental) </p>
+            <audio controls loop>
+                <source src="Audio/JanaGanaManaInstr.mp3">
+            </audio>
+
+            <!-- 
+                -Same as Audio
+                -Whenever a type of video/Audio does not works on a particular Browser 
+                then we usually give alternative type such as .mp4 with .webm etc 
+            -->
+            <p>Video by Legends</p>
+            <video height="200px" controls loop>
+                <source src="Video/JanaGanaManaVideo.mp4" type="video/mp4">
+                <source src="Video/JanaGanaManaVideo.webm" type="video/webm">
+            </video>
+
+            <!-- 
+                -To provide icon on our web page 
+            -->
+            <link rel="icon" type="image/png" href="Images/ICON.png">
+
+            <hr>
+
+            <pre>
+                Jana Gana Mana Adhinaayak Jaya Hey, 
+                Bhaarat Bhaagya Vidhaataa 
+                Panjaab Sindhu Gujarat Maraatha,
+                Draavid Utkal Banga 
+                Vindhya Himaachal Yamuna Ganga,
+                Uchchhal Jaladhi Taranga 
+                Tav Shubh Naamey Jaagey, 
+                Tav Shubh Aashish Maange 
+                Gaahey Tav Jayagaathaa 
+                Jana Gana Mangal Daayak, 
+                Jaya Hey Bhaarat Bhaagya Vidhaataa            
+                Jaya Hey, Jaya Hey, Jaya Hey, 
+                Jaya Jaya Jaya, Jaya Hey
+            </pre>
+
+            <hr>
+
+            <!-- Text formatting -->
+            <pre>
+                This is <b>bold</b>  text.
+                This is <i>italic</i>  text.
+                This is <u>underlined</u> text.
+                This is <del>deleted</del>  text.
+                This is <big>big</big> text.
+                This is <small>small</small>  text.
+                This is <sub>subscript</sub>  text.
+                This is <sup>superscript</sup>  text.
+                This is <tt>monospaced</tt>  text.
+                This is <mark style="background-color: skyblue;">highlighted</mark>  text.
+            </pre>
+
+            <!-- Group together HTML : Span(inline container) and div(block container) -->
+            <pre>
+                A musician must make music, an artist must paint, 
+                a poet must write, <span style="background-color: skyblue;">
+                if he is to be ultimately at peace 
+                with himself. What a man can be, he must be
+                </span>
+                A musician must make music, an artist must paint, 
+                a poet must write, <div style="background-color: lightgreen;">
+                if he is to be ultimately at peace 
+                with himself. What a man can be, he must be
+                </div>
+            </pre>
+
+            <!--LISTS-->
+            <h3>Unordered list</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <ul>
+                    <li>a</li>
+                    <li>b</li>
+                </ul>
+            </ul>
+            <h3>Ordered list</h3>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <ol type="i">
+                    <li>a</li>
+                    <li>b</li>
+                </ol>
+            </ol>
+            <h3>Description list</h3> <!--  Key : value  pair -->
+            <dl style="background-color: skyblue; border: 3px solid;">
+                <dt>Student 1:</dt>  <!--Description title-->
+                <dd>He is Good at studies.</dd> <!--Description's description-->
+                <dt>Student 2:</dt>
+                <dd>He is good and improving.</dd>
+            </dl>
+
+            <!-- Creating TABLES -->
+            <h3>This is a Table</h3>
+            <table border="0.5" style="background-color: rgb(73, 3, 3)">
+                <tr align="center" style="background-color: aquamarine;">
+                    <th width="1000">Sunday</th> <!--table header-->
+                    <th width="1000">Monday</th> <!--width -> To add space b/w headers-->
+                    <th width="1000">Tuesday</th>
+                    <th width="1000">Wednesday</th>
+                    <th width="1000">Thursday</th>
+                    <th width="1000">Friday</th>
+                    <th width="1000">Saturday</th>
+                </tr>
+                <tr align="left" style="background-color: white;">
+                    <td>Closed</td> <!--table data-->
+                    <td>9-10</td>
+                    <td>10-11</td>
+                    <td>11-1</td>
+                    <td>9-2</td>
+                    <td>4-5</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <!-- Creating BUTTON -->
+            <h3>This is a button</h3>
+            <a href="https://www.google.com/" target="_blank">
+                <button style="font-size: 30px; background-color: chartreuse; color: crimson; border-radius: 10px;">Click here!</button>
+            </a>
+
+            <!-- Creating FORM -->
+            <h3>This is a Form</h3>
+            <form action="mailto:deepak.20214042@mnnit.ac.in" method="post" enctype="text/plain">
+                <!-- Id is to match the 'for' attribute of the label -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Input here..." minlength="6" maxlength="15" required> <br>
+
+                <label for="password">Password:</label>
+                <input type="text" id="password" minlength="6" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="xyz@gmail.com"> <br>
+
+                <label for="phone">Phone no:</label>
+                <input type="tel" id="phone" name="phoneNumber" placeholder="+91-0123456789" pattern="\+[0-9]{1,3}-[0-9]{10}" required> <br>
+                <!-- <small>Format: +[country code]-[10 digit phone number]</small> <br> -->
+                
+                <label for="bday">Birth Date:</label>
+                <input type="date" id="bday"> <br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="0" value="1"> <br>
+
+                <label for="title">Title:</label>
+
+                <label for="Mr">Mr:</label>
+                <input type="radio" id="Mr" value="Mr" name="Surname/title">
+                <!-- 
+                    'value' attribute holds the value to be sent to server upon form submission
+                    'name' attribute groups the radio buttons, ensuring only one can be selected and its value is included in the form data. 
+                -->
+
+                <label for="Ms">Ms:</label>
+                <input type="radio" id="Ms" value="Ms" name="Surname/title">
+                
+                <label for="Dr">Dr:</label>
+                <input type="radio" id="Dr" value="Dr" name="Surname/title"> <br>
+
+                <label for="payment">Payment:</label>
+                <select id="payment">
+                    <option value="UPI">UPI</option>
+                    <option value="Net Banking">Net Banking</option>
+                    <option value="supercoins">Supercoins</option>
+                </select> <br>
+
+                <label for="subscribe">Subscribe:</label>
+                <input type="checkbox" id="subscribe"> <br>
+
+                <label for="comment">COMMENT:</label> <br>
+                <!-- When a form is submitted, the value of the <textarea> is sent to the server as a key-value pair. 
+                    The key is the name attribute, 
+                    and the value is the text entered in the textarea. -->
+                <textarea id="comment" name="comments" rows="5" cols="30">Enter your comment here!</textarea> <br>
+
+                <label for="file">File:</label>
+                <input type="file" id="file" accept="image/jpeg, image/png, application/pdf"> <br>
+
+                <input type="reset"> 
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+
+        <footer>
+            <hr>
+            Author : Amit <br>
+            &copy; copyright reserved <br>
+            <small><a href="mailto:xyz@dummy.com">Our Email</a></small>
+        </footer>
+    </body>
+</html>
